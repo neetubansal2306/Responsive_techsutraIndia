@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3, 3, 32);
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.left1 {
+    color: white;
+    margin: 50px 140px;
+    font-size: 40px;
+}
+
+.left1 p {
+    font-size: 20px;
+    margin-top: 10px;
+    width: 40%;
+}
+
+/* 
+.right1 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+} */
+.right-text {
+    position: absolute;
+    /* Use absolute positioning */
+    right: 10%;
+    /* Align to the right */
+    top: 30%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    padding: 10px;
+    /* Add some padding */
+    /* background-color: #100f0f; Optional: background color */
+    /* border: 1px solid #ccc; Optional: border */
+    color: white;
+    width: 40%;
+    font-size: 30px;
+}
+
+.right-text p {
+    font-size: 15px;
+    margin-top: 10px;
+    /* width: 40%; */
+}
+
+.skpc {
+    color: rgb(52, 96, 161);
+    height: 30%;
+    width: 30%;
+    border: 1px solid black;
+    margin: 10px 140px;
+    font-size: 20px;
+    background-color: rgb(197, 219, 214);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skpc:hover {
+    font-size: 20px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.container {
+    position: absolute;
+    right: 1%;
+    top: 70%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: white;
+    width: 50%;
+    font-size: 30px;
+    /* background-color: bisque; */
+    height: 50%;
+}
+
+.container li {
+    color: rgb(250, 246, 246);
+    list-style: none;
+    margin: 20px auto;
+}
+
+.container li a {
+    text-decoration: none;
+    color: rgb(62, 62, 171);
+    cursor: auto;
+}
+
+h2 {
+    position: absolute;
+    right: 1%;
+    top: 30%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: rgb(50, 76, 218);
+    width: 50%;
+    font-size: 30px;
+    /* background-color: rgb(23, 22, 21); */
+    height: 50%;
+    margin: 10px auto;
+    margin-left: 80px;
+}
+
+h2 li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h2 li a {
+    cursor: pointer;
+}
+
+/* .li{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: rgb(25, 24, 24);
+    width: 40%;
+    font-size: 30px;
+    /* background-color: rgb(23, 22, 21); */
+/* height: 50%;
+    margin: 10px auto; */
+/* } */

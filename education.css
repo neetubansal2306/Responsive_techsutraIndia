@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3, 3, 32);
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.left1 {
+    color: white;
+    margin: 50px 140px;
+    font-size: 40px;
+}
+
+.left1 p {
+    font-size: 20px;
+    margin-top: 10px;
+    width: 40%;
+}
+
+/* 
+.right1 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+} */
+.right-text {
+    position: absolute;
+    /* Use absolute positioning */
+    right: 10%;
+    /* Align to the right */
+    top: 30%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    padding: 10px;
+    /* Add some padding */
+    /* background-color: #100f0f; Optional: background color */
+    /* border: 1px solid #ccc; Optional: border */
+    color: white;
+    width: 40%;
+    font-size: 30px;
+}
+.sp{
+    font-weight: bolder;
+    color: rgb(47, 33, 154);
+    font-size: 20px;
+    /* text-decoration: underline; */
+}
+.right-text p {
+    font-size: 15px;
+    margin-top: 10px;
+    /* width: 40%; */
+}
+
+.skpc {
+    color: rgb(52, 96, 161);
+    height: 30%;
+    width: 30%;
+    border: 1px solid black;
+    margin: 10px 140px;
+    font-size: 20px;
+    background-color: rgb(197, 219, 214);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.skpc:hover{
+    font-size: 20px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.fw {
+    position: absolute;
+    /* Use absolute positioning */
+    right: 30%;
+    /* Align to the right */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    padding: 10px;
+    /* Add some padding */
+    /* background-color: #100f0f; Optional: background color */
+    /* border: 1px solid #ccc; Optional: border */
+    color: white;
+    width: 20%;
+    font-size: 30px;
+    background-color: rgb(114, 146, 146);
+    height: 30%;
+    /* margin-right: 0; */
+    margin-top: 5%;
+}
+
+.fe {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #100f0f;
+    border: 1px solid #ccc;
+    color: white;
+    /* Optional: border color: white; */
+    width: 20%;
+    font-size: 30px;
+    margin-top: 5%;
+    height: 30%;
+    background-color: rgb(114, 146, 146);
+}
+
+.fw1 {
+    position: absolute;
+    /* Use absolute positioning */
+    right: 30%;
+    top: 90%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    padding: 10px;
+    /* Add some padding */
+    /* background-color: #100f0f; Optional: background color */
+    /* border: 1px solid #ccc; Optional: border */
+    color: white;
+    width: 20%;
+    font-size: 30px;
+    background-color: rgb(114, 146, 146);
+    height: 30%;
+    /* margin-right: 0; */
+    margin-top: 5%;
+}
+
+.fe1 {
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #100f0f;
+    border: 1px solid #ccc;
+    color: white;
+    /* Optional: border color: white; */
+    width: 20%;
+    font-size: 30px;
+    margin-top: 5%;
+    height: 30%;
+    background-color: rgb(114, 146, 146);
+}
+
+.fw p {
+    padding: 5px;
+    /* font-size: 18px; */
+}
+
+.p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.fe p {
+    padding: 5px;
+}
+
+.W {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.fw1 p {
+    padding: 5px;
+}
+
+.p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.fe1 p {
+    padding: 5px;
+}
+
+.W {
+    font-size: 15px;
+    margin-top: 20px;
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - TechSutraIndia</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: #0d0d1b; */
+            background-color: #f0e9e9;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(0, 0, 0, 0.979);
+        }
+        
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        header nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Content Sections */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        .services-hero {
+            text-align: center;
+            padding: 80px 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.808), rgba(253, 253, 253, 0.568)), url('https://placehold.co/1200x400/0d0d1b/ffffff?text=Our+Services');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        .services-hero h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        
+        .services-hero p {
+            font-size: 1.2em;
+            color: #0f0f0f;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .services-section {
+            padding: 80px 0;
+            background-color: #fbfbfd98;
+            text-align: center;
+        }
+        
+        .services-section h2 {
+            font-size: 3em;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        
+        .services-section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            color: #0e0d0d;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .pricing-card {
+            background-color: #0b0b31;
+            padding: 40px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(240, 236, 236, 0.5);
+        }
+
+        .pricing-card h3 {
+            font-size: 2em;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5em;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .pricing-card .price small {
+            font-size: 0.5em;
+            font-weight: normal;
+            color: #ccc;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        .pricing-card ul li {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .pricing-card .btn {
+            display: block;
+            text-align: center;
+            background-color: #ffcc00;
+            color: #0d0d1b;
+            padding: 15px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .pricing-card .btn:hover {
+            background-color: #e6b800;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.973);
+            color: #ccc;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">TS</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact1.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Services Hero Section -->
+        <section class="services-hero">
+            <h1>Our Services</h1>
+            <p>From captivating web design to cutting-edge social media strategies, we provide a full suite of digital solutions to help your business thrive.</p>
+        </section>
+
+        <!-- Web Development Services -->
+        <section class="services-section container">
+            <h2>Web Development</h2>
+            <p>We build responsive, dynamic, and user-friendly websites tailored to your specific business needs. Choose a plan that's right for you.</p>
+            <div class="pricing-table">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Silver</h3>
+                    <div class="price">₹5000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; 4-Page Static Website</li>
+                        <li>&#10003; Responsive Design</li>
+                        <li>&#10003; Basic SEO Optimization</li>
+                        <li>&#10003; 1 Month Support</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <!-- Advanced Plan -->
+                <div class="pricing-card">
+                    <h3>Gold</h3>
+                    <div class="price">₹10000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; Up to 4 Modules/Pages</li>
+                        <li>&#10003; CMS Integration</li>
+                        <li>&#10003; Advanced SEO</li>
+                        <li>&#10003; 3 Months Support</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <h3>Platinum</h3>
+                    <div class="price">₹20000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; Full-Fledged Website</li>
+                        <li>&#10003; Custom Functionality</li>
+                        <li>&#10003; E-commerce/Portfolio</li>
+                        <li>&#10003; 6 Months Support</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Marketing Services -->
+        <section class="services-section container">
+            <h2>Social Media Marketing</h2>
+            <p>We create engaging content and manage your social media presence to connect with your audience and build your brand online.</p>
+            <div class="pricing-table">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Silver</h3>
+                    <div class="price">₹5000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; Poster Making</li>
+                        <li>&#10003; Basic Content Creation</li>
+                        <li>&#10003; 2D Video Editing</li>
+                        <li>&#10003; 1 Month Campaign</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <!-- Advanced Plan -->
+                <div class="pricing-card">
+                    <h3>Gold</h3>
+                    <div class="price">₹10000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; 3D Video Making</li>
+                        <li>&#10003; Advanced Editing & Merging</li>
+                        <li>&#10003; Image Creation</li>
+                        <li>&#10003; 4 Modules/Platforms</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <h3>Platinum</h3>
+                    <div class="price">₹20000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; Full-Fledged Marketing</li>
+                        <li>&#10003; Analytics & Reporting</li>
+                        <li>&#10003; Custom Campaigns</li>
+                        <li>&#10003; Full Support</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- UI/UX Design Services -->
+        <section class="services-section container">
+            <h2>UI/UX Design</h2>
+            <p>We craft intuitive and stunning user interfaces that provide a seamless and enjoyable experience for your users.</p>
+            <div class="pricing-table">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Silver</h3>
+                    <div class="price">₹5000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; Wireframing</li>
+                        <li>&#10003; User Flow Analysis</li>
+                        <li>&#10003; 1-Page Design Concept</li>
+                        <li>&#10003; 1 Revision</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <!-- Advanced Plan -->
+                <div class="pricing-card">
+                    <h3>Gold</h3>
+                    <div class="price">₹10000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; High-Fidelity Mockups</li>
+                        <li>&#10003; Interactive Prototypes</li>
+                        <li>&#10003; UI Kit Creation</li>
+                        <li>&#10003; Multiple Revisions</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <h3>Platinum</h3>
+                    <div class="price">₹20000<small> / project</small></div>
+                    <ul>
+                        <li>&#10003; Full App/Website Design</li>
+                        <li>&#10003; Usability Testing</li>
+                        <li>&#10003; User Research</li>
+                        <li>&#10003; Ongoing Consultation</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechSutraIndia. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

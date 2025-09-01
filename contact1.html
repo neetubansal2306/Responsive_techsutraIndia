@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #e4e4e91e;
+        font-family: "Inter", sans-serif;
+        color: #e0e0e0;
+      }
+
+      .contact {
+        background-color: #1e1e1e;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .contact form input,
+      .contact form select,
+      .contact form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        border-radius: 0.375rem;
+        color: #e0e0e0;
+        margin-bottom: 1rem;
+      }
+
+      .contact form button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #facc15;
+        color: #121212;
+        font-weight: bold;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .contact form button:hover {
+        background-color: #eab308;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      @media (max-width: 640px) {
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <header class="bg-[#121212] text-white">
+      <nav
+        class="flex items-center justify-between max-w-6xl mx-auto p-4 relative"
+      >
+        <div class="text-xl font-bold">TSI</div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-6">
+          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="About.html" class="hover:text-yellow-400">About</a></li>
+          <li>
+            <a href="services2.html" class="hover:text-yellow-400">Services</a>
+          </li>
+          <li>
+            <a href="contact1.html" class="hover:text-yellow-400">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          <!-- Hamburger Icon -->
+          <svg
+            id="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <ul
+          id="mobile-menu"
+          class="hidden absolute top-full left-0 w-full bg-[#121212] flex-col items-center gap-4 py-4 md:hidden"
+        >
+          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="About.html" class="hover:text-yellow-400">About</a></li>
+          <li>
+            <a href="Services.html" class="hover:text-yellow-400">Services</a>
+          </li>
+          <li>
+            <a href="contact1.html" class="hover:text-yellow-400">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <h2 class="text-2xl font-bold mb-2">Let's Work together</h2>
+      <p class="text-gray-400 mb-6">
+        Collaborated effectively with team members to achieve project goals,
+        fostering a collaborative and supportive work environment.
+      </p>
+      <form id="contactForm" action="save_data.php" method="POST">
+        <div class="form-row">
+          <input type="text" name="first_name" placeholder="First name" />
+          <input type="text" name="last_name" placeholder="Last name" />
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email" />
+          <input type="tel" name="mobile" placeholder="Mobile" />
+        </div>
+        <select name="service" required>
+          <option value="">Select a service</option>
+          <option value="frontend">Web Development</option>
+          <option value="fullstack">Social Media Marketing with 3D video</option>
+          <option value="ui/ux">UI/UX Design</option>
+          <option value="wordpress">Graphics Design</option>
+        </select>
+        <textarea
+          name="description"
+          placeholder="Description"
+          rows="5"
+        ></textarea>
+        <button type="submit">Send message</button>
+      </form>
+      <div id="status-message" class="mt-4 text-center font-bold"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      // Toggle Mobile Menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Contact Form Handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const form = document.getElementById("contactForm");
+          const formData = new FormData(form);
+          const statusMessage = document.getElementById("status-message");
+
+          statusMessage.textContent = "Saving data...";
+          statusMessage.className =
+            "mt-4 text-center font-bold text-yellow-500";
+
+          fetch(form.action, {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                statusMessage.textContent =
+                  "Message sent successfully! Your data has been saved in save_data.csv";
+                statusMessage.className =
+                  "mt-4 text-center font-bold text-green-500";
+                form.reset();
+              } else {
+                statusMessage.textContent = `Error: ${data.message}`;
+                statusMessage.className =
+                  "mt-4 text-center font-bold text-red-500";
+              }
+            })
+            .catch((error) => {
+              statusMessage.textContent =
+                "There was an error sending the message. Please try again.";
+              statusMessage.className =
+                "mt-4 text-center font-bold text-red-500";
+              console.error("Error:", error);
+            });
+        });
+    </script>
+  </body>
+</html>

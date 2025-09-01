@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Work & Vision</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      /* This is a temporary style block for demonstration.
+       * You should move these styles to your index.css file for a cleaner structure.
+       */
+      .intro-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f8f9fa;
+      }
+
+      .intro-section h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .intro-section blockquote {
+        font-style: italic;
+        color: #666;
+        margin: 20px auto;
+        max-width: 700px;
+        font-size: 1.2em;
+      }
+
+      .members-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 20px;
+      }
+
+      .member-card {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        /* Updated for centering */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .member-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .member-card h3 {
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+
+      .member-card p {
+        color: #555;
+        margin-bottom: 5px;
+      }
+
+      .member-card .btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 80px 12px 12px 12px;
+        transition: background-color 0.3s ease;
+      }
+
+      .member-card .btn:hover {
+        background-color: #0056b3;
+      }
+
+      .member-card .member-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20%;
+        /* Updated to set the gap to 10px */
+        margin-bottom: 5px;
+        margin-left: 1dvh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <img src="Logo.jpeg" alt="Company Logo" />
+        </div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="right" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services2.html">Services</a></li>
+            <li><a href="contact1.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro-section">
+        <h1>We don't just build websites; we craft digital experiences.</h1>
+        <blockquote>
+          "Every great developer is, first and foremost, a passionate
+          problem-solver. We bring your vision to life, one line of code at a
+          time."
+        </blockquote>
+      </section>
+
+      <section class="members-container">
+        <div class="member-card">
+          <h3>Neetu Bansal</h3>
+          <p>Lead Developer & Visionary</p>
+          <img src="neetu_image.jpg" alt="Neetu Bansal" class="member-image" />
+          <a
+            href="https://www.linkedin.com/in/neetu-bansal-28b640214/"
+            class="btn"
+            target="_blank"
+            >Connect on LinkedIn</a
+          >
+        </div>
+
+        <div class="member-card">
+          <h3>Your Name Here</h3>
+          <p>Co-founder & Designer</p>
+          <a href="#" class="btn" target="_blank">Connect on LinkedIn</a>
+        </div>
+      </section>
+
+      <hr />
+
+      <div class="experience">
+        <div class="info"><a>4</a>Years Of Experience</div>
+        <div class="info"><a>6</a>No. of projects</div>
+        <div class="info"><a>10</a>Technologies learned</div>
+        <div class="info"><a>4</a>internships</div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; | All rights reserved</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/"
+          ><img src="yt.jpeg" alt="YouTube"
+        /></a>
+        <a href="https://www.google.com"
+          ><img src="google.jpeg" alt="Google"
+        /></a>
+        <a href="https://github.com/neetubansal2306?tab=repositories"
+          ><img src="github.png" alt="GitHub"
+        /></a>
+        <a
+          href="https://www.instagram.com/neet.ubansal?igsh=MXMwbXA0dzZoZGRzbQ=="
+          ><img src="instagram.jpeg" alt="Instagram"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <script src="index.js">
+      // var typed = new Typed("#element", {
+      //   strings: [
+      //     "Web Developer",
+      //     "MS-Office",
+      //     "Wordpress Developer",
+      //     "Powerbi",
+      //   ],
+      //   typeSpeed: 50,
+      // });
+      // function toggleMenu() {
+      //   document.getElementById("navLinks").classList.toggle("show");
+      // }
+      // const hamburger = document.querySelector(".hamburger");
+      // const menu = document.querySelector(".right");
+
+      // hamburger.addEventListener("click", () => {
+      //   menu.classList.toggle("show");
+      // });
+    </script>
+  </body>
+</html>

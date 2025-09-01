@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(41, 42, 44);
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: gray;
+}
+
+/* Logo */
+.left img {
+  height: 60px;
+  width: auto;
+  margin: 0;
+  border-radius: 10px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
+/* Intro Section */
+.intro-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.intro-section blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 1.2rem;
+}
+
+/* Members */
+.members-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.member-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+}
+
+.member-card img.member-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-bottom: 15px;
+}
+
+.member-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.member-card .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.member-card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Experience Section */
+.experience {
+  background-color: rgba(202, 204, 207, 0.48);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.info {
+  text-align: center;
+  margin: 10px;
+}
+
+.info a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links img {
+  height: 25px;
+  width: 25px;
+  margin: 0 8px;
+  border-radius: 5px;
+}
+
+/* --------------------
+   RESPONSIVE MEDIA QUERIES
+-----------------------*/
+
+/* Tablets */
+@media (max-width: 992px) {
+  .intro-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .right {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+  }
+
+  .right.show {
+    display: flex;
+  }
+
+  .right ul {
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+  }
+
+  .right ul li a {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* On large screen always show menu */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .right {
+    display: flex !important;
+  }
+
+  .right ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+}
